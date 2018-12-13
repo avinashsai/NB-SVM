@@ -79,7 +79,7 @@ def cal_testacc(Xtest,ytest,svcoeff,bias):
 	return correct
 
 def nbsvm_kfold(data,labels,method,ngramrange,bias):
-	kf = StratifiedKFold(n_splits=2)
+	kf = StratifiedKFold(n_splits=10)
 
 	mnb_acc = 0
 	svm_acc = 0
